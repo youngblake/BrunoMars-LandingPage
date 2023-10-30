@@ -1,0 +1,129 @@
+<!-- This line specifies the document type as HTML -->
+<!DOCTYPE html>
+
+<!-- This line starts the HTML document and sets the default language to English -->
+<html lang="en">
+  <head>
+    <!-- This line specifies the character encoding used in the document -->
+    <meta charset="UTF-8" />
+
+    <!-- This line specifies the compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- This line sets the viewport properties for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- This line sets the title of the webpage that appears in the browser tab -->
+    <title>Bruno Mars Album</title>
+
+    <!-- This line links the external CSS file to style the webpage -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- This line specifies the icon used in the browser tab -->
+    <link rel="icon" type="image/x-icon" href="photos/icon.png" />
+  </head>
+
+  <body>
+    <!-- This code block defines the navigation bar of the webpage -->
+      <header>
+              <nav>
+                  <h2 class="logo">Bruno <span>Mars</span></h2>
+                  <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#music">Music Video</a></li>
+                  <li><a href="discography/index2.html">Discography</a></li>
+                  </ul>
+              <button type="button">Subscribe</button>
+              </nav>
+          </header>
+      </ul>
+    </nav>
+    <!-- This code block defines the main content area of the webpage -->
+    <div class="container">
+      <div class="songList">
+        <!-- This line defines the title of the song list -->
+        <div>
+          <h1 class="h1">Best of Bruno Mars Album</h1>
+        </div>
+        <!-- This code block defines the list of songs and their details -->
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">DooWoops & Hooligans</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >35:24 </span>
+                <i id="0" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Unorthodox Jukebox</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >34:51
+                <i id="1" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">24k Magic</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >33:28
+                <i id="2" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Silk Sonic An Evening with Silk Sonic</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >31:19
+                <i id="3" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <!-- A bottom div for displaying song controls -->
+    <div class="bottom">
+      <!-- A progress bar input element -->
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <!-- A container div for fontawesome icons -->
+      <div class="icons">
+        <!-- A fontawesome icon for previous song -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <!-- A fontawesome icon for playing/pausing the current song -->
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <!-- A fontawesome icon for next song -->
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <!-- A div for displaying the current song information -->
+      <div class="songInfo">
+        <!-- An image of a playing animation -->
+        <img src="photos/playing.gif" width="42px" alt="" id="gif" />
+        <!-- The name of the currently playing song -->
+        <span id="masterSongName">On & On-Cartoon, Daniel Levi</span>
+      </div>
+    </div>
+    <!-- A script tag for including a JavaScript file -->
+    <script src="script.js"></script>
+    <!-- A script tag for including the fontawesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

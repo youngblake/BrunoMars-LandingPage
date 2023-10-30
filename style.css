@@ -1,0 +1,155 @@
+@font-face {
+    font-family: abs;
+    src: url(abs.ttf);
+}
+@font-face {
+        font-family: disco;
+        src: url(Disco.ttf);
+
+
+}
+/* importing two Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background: url("photos/bruno.gif");
+    background-position: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: rgba(0, 0, 0, 0.323);
+    background-repeat: no-repeat;
+    background-size: 1220px 100px;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: #ffc800;
+    font-size: 28px;
+}
+span{
+    color: #8e6d00;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 32px 20px;
+}
+nav ul li a{
+    color: #8e6d00;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ffc800;
+}
+button{
+    border: none;
+    background: #edcd58;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: abs;
+   font-size: larger;
+   font-weight: bolder;
+   display: grid;
+   margin-left: 300vh;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('/photos/bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.h1{
+    text-align: center;
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 100px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 90px;
+    height: 90px;
+    margin: 0 5px;
+    border-radius: 30px;
+}
+
+.timestamp{
+    margin: 0 0%;
+    font-weight: 1000;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: abs;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
